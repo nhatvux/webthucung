@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supper Pet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+  <header class="header">
+    <div class="header-container">
+      <!-- Left Section: Logo and Dropdown -->
+      <div class="header-left">
+        <a href="#" class="logo">SupperPet</a>
+      
+      </div>
+
+      <!-- Center Section: Search Bar -->
+      <div class="header-center">
+        <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+        <button class="search-btn">Tìm kiếm</button>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Danh mục</button>
+      </div>
+
+      <!-- Right Section: Hotline and Account Icons -->
+      <div class="header-right">
+        <span class="hotline">Hotline: 1900.56.xxxx</span>
+        <div class="icons">
+          <span class="cart-icon">🛒 <span class="cart-count">0</span></span>
+          <a href="#" class="login-link">Log in</a>
+        </div>
+      </div>
+    </div>
+    
+   
+  </header>
+
+    <section class="banner">
+        <img src="images/bannertc.jpg" alt="Banner Cửa Hàng Thú Cưng" />
+    </section>
+
+    <section id="products">
+        <h2>Sản Phẩm</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="images/poodle.jpg" alt="Thú cưng 1">
+                <h3>Chó Poodle</h3>
+                <p>Giá: 1.000.000 VNĐ</p>
+                <button onclick="addToCart('Chó Poodle', 1000000)">Thêm Vào Giỏ</button>
+            </div>
+            <div class="product">
+                <img src="images/meo anh.jpg" alt="Thú cưng 2">
+                <h3>Mèo Anh</h3>
+                <p>Giá: 800.000 VNĐ</p>
+                <button onclick="addToCart('Mèo Anh', 800000)">Thêm Vào Giỏ</button>
+            </div>
+            <div class="product">
+                <img src="images/Labrador.jpg" alt="Thú cưng 3">
+                <h3>Chó Labrador</h3>
+                <p>Giá: 1.200.000 VNĐ</p>
+                <button onclick="addToCart('Chó Labrador', 1200000)">Thêm Vào Giỏ</button>
+            </div>
+            <div class="product">
+                <img src="images/Mèo Ba Tư.jpg" alt="Thú cưng 4">
+                <h3>Mèo Ba Tư</h3>
+                <p>Giá: 900.000 VNĐ</p>
+                <button onclick="addToCart('Mèo Ba Tư', 900000)">Thêm Vào Giỏ</button>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product">
+                <img src="images/Chihuahua.jpg" alt="Thú cưng 5">
+                <h3>Chó Chihuahua</h3>
+                <p>Giá: 750.000 VNĐ</p>
+                <button onclick="addToCart('Chó Chihuahua', 750000)">Thêm Vào Giỏ</button>
+            </div>
+            <div class="product">
+                <img src="images/Mèo Ragdoll.jpg" alt="Thú cưng 6">
+                <h3>Mèo Ragdoll</h3>
+                <p>Giá: 1.100.000 VNĐ</p>
+                <button onclick="addToCart('Mèo Ragdoll', 1100000)">Thêm Vào Giỏ</button>
+            </div>
+            <div class="product">
+                <img src="images/Thú Cưng Đặc Biệt.jpg" alt="Thú cưng 7">
+                <h3>Thú Cưng Đặc Biệt</h3>
+                <p>Giá: 1.500.000 VNĐ</p>
+                <button onclick="addToCart('Thú Cưng Đặc Biệt', 1500000)">Thêm Vào Giỏ</button>
+            </div>
+            <div class="product">
+                <img src="images/Mèo Bengal.jpg" alt="Thú cưng 8">
+                <h3>Mèo Bengal</h3>
+                <p>Giá: 1.300.000 VNĐ</p>
+                <button onclick="addToCart('Mèo Bengal', 1300000)">Thêm Vào Giỏ</button>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+    
+    <footer>
+      <section id="about">
+        <div>
+          <h3>Giới thiệu Suppet Pet</h3>
+          <p>Chúng tôi là cửa hàng chuyên cung cấp thú cưng và các sản phẩm liên quan.</p>
+        </div>
+        <div>
+          <h3>Về chúng tôi</h3>
+          <p>Email: info@cuhangthucung.com</p>
+          <p>Điện thoại: 0123-456-789</p>
+        </div>
+        <div>
+          <h3>Liên Hệ</h3>
+          <p>Email: info@cuhangthucung.com</p>
+          <p>Điện thoại: 0123-456-789</p>
+        </div>
+        <div>
+          <h3>Địa chỉ</h3>
+          <p>Cửa Hàng Miền Nam: 1045 Kha Vạn Cân, Linh Trung, Thủ Đức, Tp.Hcm.</p>
+          <p>Cửa Hàng Miền Nam: 1045 Kha Vạn Cân, Linh Trung, Thủ Đức, Tp.Hcm.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

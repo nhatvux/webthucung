@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #FFC800; /* Bright yellow background */
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .dropdown {
+  margin-left: 10px; /* Giảm khoảng cách giữa dropdown và thanh tìm kiếm */
+}
+
+/* Center Section: Search Bar */
+.header-center {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.search-bar {
+  display: flex; /* Sử dụng flexbox để căn chỉnh */
+  width: 100%;
+}
+
+.search-input {
+  flex: 1; /* Chiếm toàn bộ không gian còn lại */
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #000; /* Black button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.search-btn:hover {
+  background-color: #333;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000; /* Black text */
+  text-decoration: none;
+}
+
+/* Dropdown button */
+.dropdown-btn {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Giảm khoảng cách giữa dropdown và thanh tìm kiếm */
+}
+
+/* Center Section: Search Bar */
+.header-center {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.search-bar {
+  display: flex; /* Sử dụng flexbox để căn chỉnh */
+  width: 100%;
+}
+
+.search-input {
+  flex: 1; /* Chiếm toàn bộ không gian còn lại */
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #000; /* Black button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.search-btn:hover {
+  background-color: #333;
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.hotline {
+  font-size: 16px;
+  color: #000;
+  margin-right: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.cart-count {
+  font-size: 14px;
+  color: white;
+  background-color: #000;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.login-link {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Links */
+.bottom-links {
+  text-align: center;
+  padding: 5px;
+  background-color: #FFDD33;
+  font-size: 14px;
+}
+
+.bottom-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.bottom-links a:hover {
+  text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+  margin: 20px 0; /* Khoảng cách trên và dưới banner */
+}
+
+.banner img {
+  width: 100%; /* Chiều rộng của banner */
+  height: auto; /* Chiều cao tự động */
+}
+
+/* Product Container */
+#products h2 {
+  text-align: center; /* Căn giữa tiêu đề */
+  font-size: 28px; /* Kích thước chữ lớn hơn */
+  margin: 20px 0; /* Thêm khoảng cách trên và dưới cho tiêu đề */
+}
+
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Khoảng cách giữa các hàng sản phẩm */
+}
+
+.product {
+  flex: 1; /* Tự động điều chỉnh chiều rộng của sản phẩm */
+  margin: 0 10px; /* Khoảng cách giữa các sản phẩm */
+  text-align: center; /* Căn giữa nội dung sản phẩm */
+}
+
+.product img {
+  width: 100%; /* Chiều rộng của hình ảnh sản phẩm */
+  height: 500px; /* Chiều cao cố định cho tất cả ảnh */
+  object-fit: cover; /* Đảm bảo ảnh được cắt tỉ lệ */
+  border-radius: 4px; /* Bo góc cho ảnh nếu cần */
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #FFC800; /* Màu nền vàng cho footer */
+  padding: 20px; /* Thêm khoảng cách cho footer */
+}
+
+#about {
+  display: flex; /* Sử dụng flexbox để sắp xếp các div thành một hàng */
+  justify-content: flex-start; /* Căn lề trái cho các div */
+  gap: 20px; /* Khoảng cách giữa các div */
+}
+
+#about div {
+  flex: 1; /* Cho phép các div chiếm không gian đều */
+  min-width: 200px; /* Đảm bảo mỗi div có chiều rộng tối thiểu */
+}
