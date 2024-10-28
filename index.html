@@ -43,62 +43,101 @@
     </section>
 
     <section id="products">
-        <h2>Thú Cưng Được Yêu Thích</h2>
-        <div class="product-container">
-            <div class="product">
-                <img src="images/poodle.jpg" alt="Thú cưng 1">
-                <h3>Chó Poodle</h3>
-                <p>Giá: 1.000.000 VNĐ</p>
-                <button onclick="addToCart('Chó Poodle', 1000000)">Thêm Vào Giỏ</button>
-            </div>
-            <div class="product">
-                <img src="images/meo anh.jpg" alt="Thú cưng 2">
-                <h3>Mèo Anh</h3>
-                <p>Giá: 800.000 VNĐ</p>
-                <button onclick="addToCart('Mèo Anh', 800000)">Thêm Vào Giỏ</button>
-            </div>
-            <div class="product">
-                <img src="images/Labrador.jpg" alt="Thú cưng 3">
-                <h3>Chó Labrador</h3>
-                <p>Giá: 1.200.000 VNĐ</p>
-                <button onclick="addToCart('Chó Labrador', 1200000)">Thêm Vào Giỏ</button>
-            </div>
-            <div class="product">
-                <img src="images/Mèo Ba Tư.jpg" alt="Thú cưng 4">
-                <h3>Mèo Ba Tư</h3>
-                <p>Giá: 900.000 VNĐ</p>
-                <button onclick="addToCart('Mèo Ba Tư', 900000)">Thêm Vào Giỏ</button>
-            </div>
-        </div>
-        <div class="product-container">
-            <div class="product">
-                <img src="images/Chihuahua.jpg" alt="Thú cưng 5">
-                <h3>Chó Chihuahua</h3>
-                <p>Giá: 750.000 VNĐ</p>
-                <button onclick="addToCart('Chó Chihuahua', 750000)">Thêm Vào Giỏ</button>
-            </div>
-            <div class="product">
-                <img src="images/Mèo Ragdoll.jpg" alt="Thú cưng 6">
-                <h3>Mèo Ragdoll</h3>
-                <p>Giá: 1.100.000 VNĐ</p>
-                <button onclick="addToCart('Mèo Ragdoll', 1100000)">Thêm Vào Giỏ</button>
-            </div>
-            <div class="product">
-                <img src="images/Thú Cưng Đặc Biệt.jpg" alt="Thú cưng 7">
-                <h3>Thú Cưng Đặc Biệt</h3>
-                <p>Giá: 1.500.000 VNĐ</p>
-                <button onclick="addToCart('Thú Cưng Đặc Biệt', 1500000)">Thêm Vào Giỏ</button>
-            </div>
-            <div class="product">
-                <img src="images/Mèo Bengal.jpg" alt="Thú cưng 8">
-                <h3>Mèo Bengal</h3>
-                <p>Giá: 1.300.000 VNĐ</p>
-                <button onclick="addToCart('Mèo Bengal', 1300000)">Thêm Vào Giỏ</button>
-            </div>
-        </div>
-        
-        </div>
-    </section>
+      <h2>Thú Cưng Được Yêu Thích</h2>
+      <div class="product-container">
+          <div class="product">
+              <img src="images/poodle.jpg" alt="Thú cưng 1">
+              <h3>Chó Poodle</h3>
+              <p>Giá: 1.000.000 VNĐ</p>
+              <div class="quantity-control">
+                  <button onclick="changeQuantity('poodle', -1)">-</button>
+                  <input type="number" id="quantity-poodle" value="1" min="1" readonly>
+                  <button onclick="changeQuantity('poodle', 1)">+</button>
+              </div>
+              <button onclick="addToCart('Chó Poodle', 1000000, parseInt(document.getElementById('quantity-poodle').value))">Thêm Vào Giỏ</button>
+          </div>
+          <div class="product">
+              <img src="images/meo anh.jpg" alt="Thú cưng 2">
+              <h3>Mèo Anh</h3>
+              <p>Giá: 800.000 VNĐ</p>
+              <div class="quantity-control">
+                  <button onclick="changeQuantity('meo-anh', -1)">-</button>
+                  <input type="number" id="quantity-meo-anh" value="1" min="1" readonly>
+                  <button onclick="changeQuantity('meo-anh', 1)">+</button>
+              </div>
+              <button onclick="addToCart('Mèo Anh', 800000, parseInt(document.getElementById('quantity-meo-anh').value))">Thêm Vào Giỏ</button>
+          </div>
+          <div class="product">
+              <img src="images/Labrador.jpg" alt="Thú cưng 3">
+              <h3>Chó Labrador</h3>
+              <p>Giá: 1.200.000 VNĐ</p>
+              <div class="quantity-control">
+                  <button onclick="changeQuantity('labrador', -1)">-</button>
+                  <input type="number" id="quantity-labrador" value="1" min="1" readonly>
+                  <button onclick="changeQuantity('labrador', 1)">+</button>
+              </div>
+              <button onclick="addToCart('Chó Labrador', 1200000, parseInt(document.getElementById('quantity-labrador').value))">Thêm Vào Giỏ</button>
+          </div>
+          <div class="product">
+              <img src="images/Mèo Ba Tư.jpg" alt="Thú cưng 4">
+              <h3>Mèo Ba Tư</h3>
+              <p>Giá: 900.000 VNĐ</p>
+              <div class="quantity-control">
+                  <button onclick="changeQuantity('meo-ba-tu', -1)">-</button>
+                  <input type="number" id="quantity-meo-ba-tu" value="1" min="1" readonly>
+                  <button onclick="changeQuantity('meo-ba-tu', 1)">+</button>
+              </div>
+              <button onclick="addToCart('Mèo Ba Tư', 900000, parseInt(document.getElementById('quantity-meo-ba-tu').value))">Thêm Vào Giỏ</button>
+          </div>
+      </div>
+      <div class="product-container">
+          <div class="product">
+              <img src="images/Chihuahua.jpg" alt="Thú cưng 5">
+              <h3>Chó Chihuahua</h3>
+              <p>Giá: 750.000 VNĐ</p>
+              <div class="quantity-control">
+                  <button onclick="changeQuantity('chihuahua', -1)">-</button>
+                  <input type="number" id="quantity-chihuahua" value="1" min="1" readonly>
+                  <button onclick="changeQuantity('chihuahua', 1)">+</button>
+              </div>
+              <button onclick="addToCart('Chó Chihuahua', 750000, parseInt(document.getElementById('quantity-chihuahua').value))">Thêm Vào Giỏ</button>
+          </div>
+          <div class="product">
+              <img src="images/Mèo Ragdoll.jpg" alt="Thú cưng 6">
+              <h3>Mèo Ragdoll</h3>
+              <p>Giá: 1.100.000 VNĐ</p>
+              <div class="quantity-control">
+                  <button onclick="changeQuantity('ragdoll', -1)">-</button>
+                  <input type="number" id="quantity-ragdoll" value="1" min="1" readonly>
+                  <button onclick="changeQuantity('ragdoll', 1)">+</button>
+              </div>
+              <button onclick="addToCart('Mèo Ragdoll', 1100000, parseInt(document.getElementById('quantity-ragdoll').value))">Thêm Vào Giỏ</button>
+          </div>
+          <div class="product">
+              <img src="images/Thú Cưng Đặc Biệt.jpg" alt="Thú cưng 7">
+              <h3>Thú Cưng Đặc Biệt</h3>
+              <p>Giá: 1.500.000 VNĐ</p>
+              <div class="quantity-control">
+                  <button onclick="changeQuantity('dac-biet', -1)">-</button>
+                  <input type="number" id="quantity-dac-biet" value="1" min="1" readonly>
+                  <button onclick="changeQuantity('dac-biet', 1)">+</button>
+              </div>
+              <button onclick="addToCart('Thú Cưng Đặc Biệt', 1500000, parseInt(document.getElementById('quantity-dac-biet').value))">Thêm Vào Giỏ</button>
+          </div>
+          <div class="product">
+              <img src="images/Mèo Bengal.jpg" alt="Thú cưng 8">
+              <h3>Mèo Bengal</h3>
+              <p>Giá: 1.300.000 VNĐ</p>
+              <div class="quantity-control">
+                  <button onclick="changeQuantity('bengal', -1)">-</button>
+                  <input type="number" id="quantity-bengal" value="1" min="1" readonly>
+                  <button onclick="changeQuantity('bengal', 1)">+</button>
+              </div>
+              <button onclick="addToCart('Mèo Bengal', 1300000, parseInt(document.getElementById('quantity-bengal').value))">Thêm Vào Giỏ</button>
+          </div>
+      </div>
+  </section>
+  
 
     
     <footer>
@@ -124,5 +163,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="main.ts"></script>
 </body>
 </html>

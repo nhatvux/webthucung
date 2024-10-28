@@ -216,6 +216,54 @@ body {
   border-radius: 4px; /* Bo góc cho ảnh nếu cần */
 }
 
+/*Them so luong*/
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantity-control button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.product {
+  flex: 1; /* Tự động điều chỉnh chiều rộng của sản phẩm */
+  margin: 0 10px; /* Khoảng cách giữa các sản phẩm */
+  text-align: center; /* Căn giữa nội dung sản phẩm */
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center; /* Căn giữa các nút trong dòng */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin: 10px 0;
+}
+
+.quantity-control button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 
 
 /* Footer */
@@ -234,3 +282,5 @@ footer {
   flex: 1; /* Cho phép các div chiếm không gian đều */
   min-width: 200px; /* Đảm bảo mỗi div có chiều rộng tối thiểu */
 }
+
+
